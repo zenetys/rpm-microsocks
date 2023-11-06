@@ -1,0 +1,9 @@
+[Unit]
+Description=MicroSocks SOCKS5 server
+
+[Service]
+User=microsocks
+ExecStart=/usr/sbin/microsocks ${MICROSOCKS_OPTIONS}
+
+[Install]
+WantedBy=multi-user.target
