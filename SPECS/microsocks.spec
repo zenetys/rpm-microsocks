@@ -1,4 +1,4 @@
-# Supported targets: el9
+# Supported targets: el8, el9
 
 Name: microsocks
 Version: 1.0.3
