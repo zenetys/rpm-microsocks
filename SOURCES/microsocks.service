@@ -2,8 +2,9 @@
 Description=MicroSocks SOCKS5 server
 
 [Service]
+EnvironmentFile=-/etc/sysconfig/microsocks
 User=microsocks
-ExecStart=/usr/sbin/microsocks ${MICROSOCKS_OPTIONS}
+ExecStart=/usr/sbin/microsocks $MICROSOCKS_OPTIONS
 
 [Install]
 WantedBy=multi-user.target

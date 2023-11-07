@@ -2,7 +2,7 @@
 
 Name: microsocks
 Version: 1.0.3
-Release: 1%{?dist}.zenetys
+Release: 2%{?dist}.zenetys
 Summary: Tiny, portable SOCKS5 server with very moderate resource usage
 Group: Applications/Communications
 License: MIT
@@ -52,6 +52,6 @@ fi
 %doc README.md
 %license COPYING
 %{_sbindir}/microsocks
-%{_sysconfdir}/sysconfig/microsocks
+%config(noreplace) %{_sysconfdir}/sysconfig/microsocks
 %{_unitdir}/microsocks.service
 %attr(-, microsocks, microsocks) %dir %{_localstatedir}/lib/microsocks
