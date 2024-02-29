@@ -1,8 +1,8 @@
 # Supported targets: el8, el9
 
 Name: microsocks
-Version: 1.0.3
-Release: 2%{?dist}.zenetys
+Version: 1.0.4
+Release: 1%{?dist}.zenetys
 Summary: Tiny, portable SOCKS5 server with very moderate resource usage
 Group: Applications/Communications
 License: MIT
